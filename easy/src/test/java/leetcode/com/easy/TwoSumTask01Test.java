@@ -20,7 +20,7 @@ class TwoSumTask01Test {
 
     @ParameterizedTest
     @MethodSource("makeArgs")
-    void example1(int[] nums, int target, int[] expectedIndices) {
+    void shouldFindTargetSum(int[] nums, int target, int[] expectedIndices) {
         assertThat(task.twoSum(nums, target))
                 .containsExactlyInAnyOrder(expectedIndices);
     }
@@ -36,7 +36,7 @@ class TwoSumTask01Test {
         var expectedIndices2 = new int[]{1, 2};
         var example2 = Arguments.of(nums2, target2, expectedIndices2);
 
-        var nums3 = new int[]{3,3};
+        var nums3 = new int[]{3, 3};
         var target3 = 6;
         var expectedIndices3 = new int[]{0, 1};
         var example3 = Arguments.of(nums3, target3, expectedIndices3);
