@@ -10,20 +10,20 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ThreeSumTask15Test {
+class ThreeSumTest {
 
-    private ThreeSumTask15 threeSumTask15;
+    private ThreeSum task;
 
     @BeforeEach
     void setUp() {
-        this.threeSumTask15 = new ThreeSumTask15();
+        this.task = new ThreeSum();
     }
 
     @ParameterizedTest
     @MethodSource("makeArgs")
     @SuppressWarnings("unchecked")
     void shouldFindThreeNumsWithZeroSum(int[] nums, List<List<Integer>> expectedTriplets) {
-        assertThat(threeSumTask15.threeSum(nums))
+        assertThat(task.threeSum(nums))
                 .containsExactlyInAnyOrder(expectedTriplets.toArray(List[]::new));
     }
 

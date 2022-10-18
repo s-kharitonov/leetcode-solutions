@@ -9,19 +9,19 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class NumberOfGoodPairsTask1512Test {
+class NumberOfGoodPairsTest {
 
-    private NumberOfGoodPairsTask1512 numberOfGoodPairsTask1512;
+    private NumberOfGoodPairs task;
 
     @BeforeEach
     void setUp() {
-        this.numberOfGoodPairsTask1512 = new NumberOfGoodPairsTask1512();
+        this.task = new NumberOfGoodPairs();
     }
 
     @ParameterizedTest
     @MethodSource("makeArgs")
     void shouldReturnNumberOfGoodPairs(int[] nums, int expectedPairsNumber) {
-        assertThat(numberOfGoodPairsTask1512.numIdenticalPairs(nums))
+        assertThat(task.numIdenticalPairs(nums))
                 .isEqualTo(expectedPairsNumber);
     }
 

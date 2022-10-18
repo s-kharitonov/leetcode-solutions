@@ -9,13 +9,13 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class HowManyNumbersAreSmallerThanCurrentNumberTask1365Test {
+class HowManyNumbersAreSmallerThanCurrentNumberTest {
 
-    private HowManyNumbersAreSmallerThanCurrentNumberTask1365 task;
+    private HowManyNumbersAreSmallerThanCurrentNumber task;
 
     @BeforeEach
     void setUp() {
-        this.task = new HowManyNumbersAreSmallerThanCurrentNumberTask1365();
+        this.task = new HowManyNumbersAreSmallerThanCurrentNumber();
     }
 
     @ParameterizedTest

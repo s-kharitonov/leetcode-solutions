@@ -9,13 +9,13 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TwoSumTask01Test {
+class TwoSumTest {
 
-    private TwoSumTask01 task;
+    private TwoSum task;
 
     @BeforeEach
     void setUp() {
-        this.task = new TwoSumTask01();
+        this.task = new TwoSum();
     }
 
     @ParameterizedTest

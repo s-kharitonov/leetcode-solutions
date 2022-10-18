@@ -8,7 +8,7 @@ import java.util.Map;
  * Given an array of integers nums, return the number of good pairs.
  * A pair (i, j) is called good if nums[i] == nums[j] and i < j.
  */
-public class NumberOfGoodPairsTask1512 {
+public class NumberOfGoodPairs {
 
     public int numIdenticalPairs(int[] nums) {
         int counter = 0;

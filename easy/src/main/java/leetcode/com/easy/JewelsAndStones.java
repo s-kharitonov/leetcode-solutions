@@ -7,7 +7,7 @@ package leetcode.com.easy;
  * are also jewels.
  * Letters are case-sensitive, so "a" is considered a different type of stone from "A".
  */
-public class JewelsAndStonesTask771 {
+public class JewelsAndStones {
 
     public int numJewelsInStones(String jewels, String stones) {
         int stonesCounter = 0;

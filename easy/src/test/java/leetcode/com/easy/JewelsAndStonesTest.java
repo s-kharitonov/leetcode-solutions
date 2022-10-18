@@ -9,19 +9,19 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class JewelsAndStonesTask771Test {
+class JewelsAndStonesTest {
 
-    private JewelsAndStonesTask771 jewelsAndStonesTask771;
+    private JewelsAndStones task;
 
     @BeforeEach
     void setUp() {
-        this.jewelsAndStonesTask771 = new JewelsAndStonesTask771();
+        this.task = new JewelsAndStones();
     }
 
     @ParameterizedTest
     @MethodSource("makeArgs")
     void shouldCalculateStones(String jewels, String stones, int expectedStonesCount) {
-        assertThat(jewelsAndStonesTask771.numJewelsInStones(jewels, stones))
+        assertThat(task.numJewelsInStones(jewels, stones))
                 .isEqualTo(expectedStonesCount);
     }
 
